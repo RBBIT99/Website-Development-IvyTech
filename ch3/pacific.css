@@ -14,4 +14,5 @@ dt {color: #002171;
 .resort { color: #1976D2}
 footer { color: #333333;
          font-size: .75em;
-         text-align: center; }
+         text-align: center;
+         font-style: italic; }
