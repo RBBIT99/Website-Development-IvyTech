@@ -11,7 +11,8 @@ nav { font-weight: bold;
     background-color: #bbdefb; }
 dt {color: #002171;
     font-weight: bold;}
-.resort { color: #1976D2}
+.resort { color: #1976D2;
+        font-size:1.2em;}
 footer { color: #333333;
          font-size: .75em;
          text-align: center;
