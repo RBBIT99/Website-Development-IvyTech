@@ -3,26 +3,12 @@
 <head>
 <title>Pacific Trails Resort::Reservations</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="pacific.css" rel="stylesheet">
-<script>
-function validateForm() {
-	const phoneNumber = document.forms[0].myPhone.value;
-	const regex = /^\d{3}-\d{3}-\d{4}$/;
-	if (regex.test(phoneNumber)) {
-		return true;
-	} else {
-		alert(
-			"Invalid phone number: include a dash after the area code and a dash after the first 3 digits of the phone number or this must be a ten digit phone number"
-		);
-	return false;
-	}
-} // end function validateForm
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
-  <h1>
+   <h1>
   <a href="index.html">Pacific Trails Resort</a>
   </h1>
 </header>
@@ -32,6 +18,7 @@ function validateForm() {
   <li><a href="yurts.html">Yurts</a></li>
 	<li><a href="activities.html">Activities</a></li> 
   <li><a href="reservations.html">Reservations</a></li>
+  <li><a href="shop.html">Shop</a></li>
   </ul> 
 </nav>
 <div id = "wrapper">
@@ -40,24 +27,23 @@ function validateForm() {
  <h2>Reservations at Pacific Trails</h2>
  <h3>Contact Us</h3>
  <p>Required fields are marked with an asterisk*</p>
- <form method="post" action="https://webdevbasics.net/scripts/pacific.php"
-	onsubmit="return validateForm();">
+ <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
 	 <label for="myFName">*First Name:</label>
 	 <input type="text" name="myFName" id="myFName" required>
 	 <label for="myLName">*Last Name:</label>
 	 <input type="text" name="myLName" id="myLName" required>
 	 <label for="myAddress">*Street Address:</label>
-	 <input type="text" name="myAddress" id="myAddress" required />
+	 <input type="text" name="myAddress" id="myAddress" required />"
 	 <label for="myCity">*City:</label>
 	 <input type="text" name="myCity" id="myCity" required />
 	 <label for="myState">*State:</label>
 	 <input type="text" name="myState" id="myState" minlength="2" maxlength="2" required />
 	 <label for="myZip">*Zip Code:</label>
-	 <input type="text" name="myZip" id="myZip" minlength="5" maxlength="9" required />
+	 <input type="text" name="myZip" id="myZip" minlength="9" maxlength="9" required />
 	 <label for="myEmail">*E-mail:</label>
 	 <input type="text" name="myEmail" id="myEmail" required>
 	 <label for="myPhone">*Phone Number:</label>
-	 <input type="text" name="myPhone" id="myPhone">
+	 <input type="text" name="myPhone" id="myPhone" minlength="10" maxlength="10" required>
 	 <label for="myDate">Arrival Date</label>
 	 <input type="date" name="myDate" id="myDate">
 	 <label for="myNights">Nights from 1 to 14:</label>

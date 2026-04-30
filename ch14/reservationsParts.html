@@ -7,16 +7,16 @@
 <link href="pacific.css" rel="stylesheet">
 <script>
 function validateForm() {
-	const phoneNumber = document.forms[0].myPhone.value;
-	const regex = /^\d{3}-\d{3}-\d{4}$/;
-	if (regex.test(phoneNumber)) {
-		return true;
-	} else {
-		alert(
-			"Invalid phone number: include a dash after the area code and a dash after the first 3 digits of the phone number or this must be a ten digit phone number"
-		);
-	return false;
-	}
+if (document.forms[0].myPhone.value == "" ) {
+    alert("Phone field cannot be empty.");
+    return false;
+} // end if
+if (document.forms[0].myNights.value > 14) {
+    alert("Nights are more than 14. Can't stay for more than two weeks.");
+    return false;
+} // end if
+alert("Phone and Nights are valid.");
+return true;
 } // end function validateForm
 </script>
 </head>
@@ -40,8 +40,7 @@ function validateForm() {
  <h2>Reservations at Pacific Trails</h2>
  <h3>Contact Us</h3>
  <p>Required fields are marked with an asterisk*</p>
- <form method="post" action="https://webdevbasics.net/scripts/pacific.php"
-	onsubmit="return validateForm();">
+ <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
 	 <label for="myFName">*First Name:</label>
 	 <input type="text" name="myFName" id="myFName" required>
 	 <label for="myLName">*Last Name:</label>
@@ -53,11 +52,11 @@ function validateForm() {
 	 <label for="myState">*State:</label>
 	 <input type="text" name="myState" id="myState" minlength="2" maxlength="2" required />
 	 <label for="myZip">*Zip Code:</label>
-	 <input type="text" name="myZip" id="myZip" minlength="5" maxlength="9" required />
+	 <input type="text" name="myZip" id="myZip" minlength="9" maxlength="9" required />
 	 <label for="myEmail">*E-mail:</label>
 	 <input type="text" name="myEmail" id="myEmail" required>
 	 <label for="myPhone">*Phone Number:</label>
-	 <input type="text" name="myPhone" id="myPhone">
+	 <input type="text" name="myPhone" id="myPhone" minlength="10" maxlength="10" required>
 	 <label for="myDate">Arrival Date</label>
 	 <input type="date" name="myDate" id="myDate">
 	 <label for="myNights">Nights from 1 to 14:</label>
