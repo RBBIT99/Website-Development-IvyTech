@@ -151,6 +151,19 @@ section {
     padding-right: .5em;
 }
 
+.Logo {
+  float: left;
+  width: 108px;
+  height: 108px;
+  background: #452B1F;
+}
+
+.Logo h1 {
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+
 #wrapper {
     background-color: #6F4E37;
 }
@@ -244,19 +257,38 @@ textarea {
         display: inline;
     }
 
-    #homehero {
-        background-size: 100% 100%;
-    }
+    #home {
+    height: 300px;
+    background-image: url(CoffeeStock.jpg);
+    background-size: 200% 100%;
 
-    #yurthero {
-        background-size: 100% 100%;
+}
 
-    }
+#actionsandtick {
+    height: 300px;
+    background-image: url(study.jpg);
+    background-size: 200% 100%;
 
-    #trailhero {
-        background-size: 100% 100%;
-    }
+}
 
+#curseofsaid {
+    height: 300px;
+    background-image: url(library.jpg);
+    background-size: 200% 100%;
+
+}
+#descriptorsandcolor {
+    height: 300px;
+    background-image: url(cafeimage.jpg);
+    background-size: 200% 100%;
+
+}
+#aboutme {
+    height: 300px;
+    background-image: url(cafeimage.jpg);
+    background-size: 200% 100%;
+
+}
     form {
         display: grid;
         width: 60%;
@@ -269,9 +301,6 @@ textarea {
         width: 9em;
     }
 
-    #reshero {
-        background-size: 100% 100%;
-    }
 }
 
 /* Large Display */
