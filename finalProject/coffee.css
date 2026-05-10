@@ -196,8 +196,8 @@ section {
 }
 #aboutme {
     height: 300px;
-    background-image: url(cafeimage.jpg);
-    background-size: 200% 100%;
+    background-image: url(coffeecup.jpg);
+    background-size: 100% 100%;
 
 }
 #mobile {
@@ -285,8 +285,8 @@ textarea {
 }
 #aboutme {
     height: 300px;
-    background-image: url(cafeimage.jpg);
-    background-size: 200% 100%;
+    background-image: url(coffeecup.jpg);
+    background-size: 100% 100%;
 
 }
     form {

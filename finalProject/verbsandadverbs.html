@@ -14,6 +14,38 @@
             <h1>
             <a>The Rabbit Hole</a>
             </h1>
+            <script>
+                function checkVerb() {
+                const verbList = ["ran", "walked", "went"];
+                const verbVal = document.getElementById("VerbQuestion").value;
+                    if(verbList.includes(verbVal)) {
+                        alert("Correct! Nicely done.");
+                        return true;
+                        
+                    }
+                
+                    else {
+
+                        alert("False! Try again.");
+                        return false;
+                    }
+                }
+                function checkAdverb() {
+                const adverbList = ["gently", "softly", "poorly"];
+                const adverbVal = document.getElementById("AdverbQuestion").value;
+                    if(adverbList.includes(adverbVal)) {
+                        alert("Correct! Nicely done.");
+                        return true;
+                        
+                    }
+                
+                    else {
+
+                        alert("False! Try again.");
+                        return false;
+                    }
+                }
+            </script>
         </header>
         <nav>
             <ul>
@@ -27,7 +59,24 @@
         <div id = "wrapper">
         <div id = "actionsandtick"></div>
         <main>
-            
+            <h3>Try it out yourself, find the right verb for the question below</h3>
+
+            <form onsubmit="return checkVerb();">
+                <label for="VerbQuestion">Yesterday, I _______ to the store.</label>
+	            <input type="text" name="VerbQuestion" id="VerbQuestion">
+
+                <input type="submit" value="Check Verb">
+            </form>
+
+            <h3>Try and use the prompt provided and use the most appropriate adverb!</h3>
+
+            <form onsubmit="return checkAdverb();">
+                <label for="Adverb Question">She sang the song __________ to the baby.</label>
+	            <input type="text" name="AdverbQuestion" id="AdverbQuestion">
+
+                <input type="submit" value="Check Adjectives">
+            </form>
+            <h4><i>Only fill out one at a time.</i></h4>
         </main>
         <footer>
             <a href="actionandtick.html">

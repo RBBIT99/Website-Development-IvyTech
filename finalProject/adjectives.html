@@ -14,6 +14,24 @@
             <h1>
             <a>The Rabbit Hole</a>
             </h1>
+            <script>
+                function checkAdjective() {
+                    const adjList = ["fast", "strong", "slow", "smart"];
+                    const formVal = document.getElementById("FirstQuestion").value;
+                    if (adjList.includes(formVal))
+                      {
+                        alert("Correct! Nicely done.");
+                        return true;
+                        
+                      }
+                    else{
+
+                        alert("False! Try again.");
+                        return false;
+                    }
+
+                }
+            </script>
         </header>
         <nav>
             <ul>
@@ -27,7 +45,20 @@
         <div id = "wrapper">
         <div id = "descriptorsandcolor"></div>
         <main>
-            
+            <p>Adjectives! They're the key to defining your character. Is your character slow? Fast? Are they small, or tall?</p>
+            <p>Are they strong? Are they weak? All these things are keys to defining the character, and the more you can define
+                your character, the more you can get people immersed in the story. Properly defining your characters means your readers
+                know more. More about what they look like. How they dress, how they look. It creates this image of your character in their head
+            </p>
+
+            <h3>Try it out yourself! Use the words 'fast, smart, slow, strong' in the following sentence!</h3>
+
+            <form onsubmit="return checkAdjective();">
+                <label for="FirstQuestion">Being _____ was the boy's greatest quality.</label>
+	            <input type="text" name="FirstQuestion" id="FirstQuestion">
+
+                <input type="submit" value="Check Adjectives">
+            </form>
         </main>
         <footer>
             <a href="descriptorandcolor.html">
