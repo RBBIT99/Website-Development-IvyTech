@@ -95,6 +95,19 @@ nav {
 
 }
 
+.button-style {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #452B1F;
+  color: #F5DEB3;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+.button-style:hover {
+  background-color: #452B1F;
+}
+
 nav a {
     text-decoration: none;
 }
